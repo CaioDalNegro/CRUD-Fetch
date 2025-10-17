@@ -9,7 +9,7 @@ export default function userForm({onUserAdded}){
     const addUser = async () => {
         if (!name || !email) return ;
         try{
-            await fetch("http:10.110.12.39:3000/users",{
+            await fetch("http:10.110.12.22:3000/users",{
                 method: "POST",
                 headers:{"Content-Type": "application/json"},
                 body: JSON.stringify({name, email})
